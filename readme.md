@@ -1,30 +1,66 @@
-1. visit docs.gadget.dev -> Building chatgpt apps
-2. Blog for step by step tutorial -
-3. docs.gadget.dev
-   -> Building chatgpt apps
-   -> fork template on gadget
-   -> App name
+# ChatGPT Movie App
 
-4. Setting app in chatgpt
-   -> Take the live app url from gadget.dev
-   -> chatgpt
-   -> settings
-   -> App and connectors
-   -> create
-   -> name
-   -> url/mcp
-   -> authentication
-   -> oauth
+A step-by-step guide to building a ChatGPT movie app using Gadget and The Movie Database (TMDB) API.
 
-5. Add a watchlist model under api -> models
-6. Helper file to make call to tmdb server in api -> tmdb.ts
-7. tmdb docs -> developer.themoviedb.org/reference/getting-started
-8. Add environment variables on gadget.app
-   -> settings
-   -> Environment variables
-   -> TMDB_API_KEY
-9. The full flow exist in this blog -> https://dev.to/gadgetdev/building-a-chatgpt-movie-app-with-the-openai-apps-sdk-eab
-10. After doing all the above steps go to chatgpt 
-    -> click on + icon on left 
-    -> select your tool 
-    -> Give your prompt
+## 📚 Documentation & Resources
+
+- **Official Documentation**: [docs.gadget.dev - Building ChatGPT Apps](https://docs.gadget.dev)
+- **Step-by-Step Tutorial**: [Building a ChatGPT Movie App with the OpenAI Apps SDK](https://dev.to/gadgetdev/building-a-chatgpt-movie-app-with-the-openai-apps-sdk-eab)
+- **TMDB API Documentation**: [developer.themoviedb.org](https://developer.themoviedb.org/reference/getting-started)
+
+## 🚀 Getting Started
+
+### 1. Initial Setup
+
+1. Visit [docs.gadget.dev](https://docs.gadget.dev) → Building ChatGPT Apps
+2. Fork the template on Gadget
+3. Set your app name
+
+### 2. Configure ChatGPT App
+
+1. Take the live app URL from gadget.dev
+2. Go to ChatGPT → Settings
+3. Navigate to **App and connectors**
+4. Click **Create**
+5. Fill in the required information:
+   - **Name**: Your app name
+   - **URL/MCP**: Your Gadget app URL
+   - **Authentication**: OAuth
+
+### 3. Backend Setup
+
+#### Add Watchlist Model
+
+- Go to **API → Models**
+- Add a watchlist model
+
+#### Create TMDB Helper
+
+- Create a helper file: `api/tmdb.ts`
+- This file will handle calls to the TMDB server
+
+#### Environment Variables
+
+1. Go to [gadget.app](https://gadget.app) → Settings
+2. Navigate to **Environment variables**
+3. Add: `TMDB_API_KEY`
+
+## 🎬 Usage
+
+After completing all the setup steps:
+
+1. Go to ChatGPT
+2. Click the **+** icon on the left sidebar
+3. Select your tool
+4. Give your prompt to interact with the movie app
+
+## 📖 Additional Resources
+
+For the complete implementation flow, refer to the detailed blog post: [Building a ChatGPT Movie App with the OpenAI Apps SDK](https://dev.to/gadgetdev/building-a-chatgpt-movie-app-with-the-openai-apps-sdk-eab)
+
+## 🔧 Tech Stack
+
+- **Backend**: Gadget
+- **API**: The Movie Database (TMDB)
+- **Frontend**: ChatGPT Apps SDK
+- **Authentication**: OAuth
